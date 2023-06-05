@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --azulMarinho : #304F6D;
+    --cinzaEsverdeado: #899481;
+    --laranjaPalido: #E07D54;
+    --amareloDesbotado: #FFE1A0;
+    --aguaLimpa: #E2F3FD;
+    --cinza: #E6E1DD;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--cinza);
+    background-color: var(--azulMarinho);
+}
+
+a{
+   text-decoration: none;
+   color: var(--amareloDesbotado);
+}
+button{
+    border: none;
+}
+
+header{
+    margin: 3em auto;
+    text-align: center;
+}
+
+main{
+    width: 60%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 20px;
+}
+.card,.card-show{
+    height: auto;
+    background-color: var(--laranjaPalido);
+    border-radius: 10px;
+    padding: 0.2em;
+}
+.card{
+    width: 180px;
+    text-align: center;
+}
+.main-show{
+    display: flex;
+    display: block;
+    align-items: center;
+}
+.card-show{
+    width: 300px;
+    padding: 1em;
+    margin: 2em auto;
+}
+.foto-jogador{
+    height: 160px;
+    width: 120px;
+    border: 3px solid var(--aguaLimpa);
+}
+.info{
+    display: flex;
+}
+.lista-info{
+    list-style-type: none;
+}
+.lista-info li{
+    margin: 0.3em auto;
+}
+.actions{
+    margin-top: 0.2em;
+    text-align: center;
+}
+.actions-show{
+    margin-top: 1em;
+}
+.card-button{
+    font-size: 16px;
+    color: var(--amareloDesbotado);
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+}
+
+.div-form{
+    width: 30%;
+    background-color: var(--cinzaEsverdeado);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1.5em auto;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0.5em auto;
+}
+/* .input-file{
+    color: var(--azulMarinho);
+    background-color: var(--amareloDesbotado);
+} */
+.form-fields input{
+    width: 95%;
+    height: 1.5em;
+    margin-bottom: 0.4em;
+}
+
+.form-fields button{
+    color: var(--azulMarinho);
+    background-color: var(--amareloDesbotado);
+    height: 2em;
+    margin: 1em auto;
+    width: 50%;
+}
+.div-link{
+    text-align: center;
+}
